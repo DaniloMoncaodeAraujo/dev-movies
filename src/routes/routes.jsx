@@ -28,7 +28,6 @@ function Router() {
 }
 
 export default Router */
-import { ScrollProvider } from './scroll'; 
 import { Route, Routes } from 'react-router-dom'
 import Home from '../containers/Home'
 import Movies from '../containers/Movies'
@@ -43,7 +42,6 @@ import DetailSeries from '../containers/DetalheSeries'
 function Router() {
 
   return (
-    <ScrollProvider>
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route path='/' element={<Home />} />
@@ -56,7 +54,6 @@ function Router() {
           <Route path='/explorar' element={<Explorar />} />
         </Route>
       </Routes>
-    </ScrollProvider>
 
 
   )
