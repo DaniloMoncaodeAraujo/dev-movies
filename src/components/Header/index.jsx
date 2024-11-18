@@ -2,7 +2,9 @@ import { Link, useLocation } from 'react-router-dom'
 import { clock, filter, lupa, persona, sino, wifi, logoFlix } from '../../assets/zimages'
 import { Container, MenuTwo, Menu, Li } from './styles'
 import { useState, useEffect } from 'react'
-import { format } from 'date-fns';
+import { format } from 'date-fns'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 function Header() {
     const [changeBackground, setChangeBackground] = useState(false)
@@ -17,11 +19,20 @@ function Header() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-          setTime(format(new Date(), 'HH:mm'));
-        }, 1000); 
-    
+            setTime(format(new Date(), 'HH:mm'));
+        }, 1000);
+
         return () => clearInterval(interval);
     }, []);
+
+    const myItens = [
+        { pathname: pathname === '/', to: '/', name: "Home" },
+        { pathname: pathname.includes('filmes'), to: '/filmes', name: "Filmes" },
+        { pathname: pathname.includes('series'), to: '/series', name: "Series" },
+        { pathname: pathname.includes('kids'), to: '/kids', name: "Kids" },
+        { pathname: pathname.includes('anime'), to: '/anime', name: "Anime" },
+        { pathname: pathname.includes('explorar'), to: '/explorar', name: "Explorar" },
+    ]
 
     return (
         <Container changeBackground={changeBackground}>
@@ -44,6 +55,46 @@ function Header() {
             </Menu>
 
             <MenuTwo>
+                <Swiper
+                    grabCursor
+                    spaceBetween={0}
+                    slidesPerView={"auto"}
+                    className='swiper'
+                    
+
+                >
+                    {myItens.map((item, index) => (
+                        <SwiperSlide >
+                            <Li isActive={item.pathname}>
+                                <Link to={item.to}>{item.name}</Link>
+                            </Li>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </MenuTwo>
+
+
+        </Container>
+
+    )
+}
+
+export default Header
+
+/* 
+
+  <MenuTwo>
+                
+                {myItens.map((item, index) => (
+                    <Li key={index} isActive={item.pathname}>
+                        <Link to={item.to}>{item.name}</Link>
+                    </Li>
+                ))}
+
+            </MenuTwo>
+
+
+ <MenuTwo>
                 <Li isActive={pathname === '/'}>
                     <Link to='/'>Home</Link>
                 </Li>
@@ -69,9 +120,4 @@ function Header() {
                 </Li>
 
             </MenuTwo>
-        </Container>
-
-    )
-}
-
-export default Header 
+*/

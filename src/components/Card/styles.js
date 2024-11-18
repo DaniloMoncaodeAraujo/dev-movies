@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/breakpoints"
 
 export const Container = styled.div`
 display: flex;
@@ -24,6 +25,34 @@ img{
    width: 300px;
    height: 100%;
    margin-bottom: 5px;
+
+   @media ${breakpoints.xll} {
+      width: 280px;
+   }
+
+   @media ${breakpoints.xlk} {
+      width: 260px;
+   }
+
+   @media ${breakpoints.lg} {
+      width: 240px;
+   }
+
+   @media ${breakpoints.md} {
+      width: 200px;
+   }
+
+   @media ${breakpoints.sm} {
+      width: 180px;
+   }
+
+   @media ${breakpoints.sml} {
+      width: 165px;
+   }
+
+   @media ${breakpoints.sk} {
+      width: 120px;
+   }
 }
 
 h3{

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/breakpoints";
 
 export const Background = styled.div`
 height: 110vh;
@@ -27,9 +28,60 @@ border: 1px solid yellow;
 border-bottom: 5px solid #FFEB99;
 gap: 10px;
 
+  @media ${breakpoints.lg} {
+      width: 600px;
+      
+   }
+
+   @media ${breakpoints.md} {
+      width: 530px;
+      
+   }
+
+   @media ${breakpoints.sm} {
+      width: 500px;
+   }
+   
+   @media ${breakpoints.sml} {
+      width: 400px;
+      margin-top: 20px;
+   }
+
+   @media ${breakpoints.sl} {
+      margin-top: 120px;
+   }
+
+   @media ${breakpoints.sj} {
+      width: 390px;
+      margin-top: 150px;
+   }
+
+   @media ${breakpoints.sk} {
+      width: 330px;
+      height: 70%;
+      margin-top: 150px;
+   }
+
 iframe{
    border: none;
    height: 100%;
+
+   @media ${breakpoints.sm} {
+      width: 400px;
+   }
+
+   @media ${breakpoints.sml} {
+      width: 350px;
+   }
+
+   @media ${breakpoints.sj} {
+      width: 340px;
+   }
+
+   @media ${breakpoints.sk} {
+      width: 320px;
+   }
+
 }
 
 button{

@@ -65,7 +65,7 @@ function ViewCine({ info, detail }) {
                 {info && info[3] && (<aside className='aside-two' > <img onClick={() => movieDetail(info[3], detail)} src={getImages(info[3].poster_path)} /> </aside>)}
             </ContainerMovies>
 
-            <section>
+            <section className='titles'>
                 <h4>Prepare a pipoca e venha Maratonar</h4> 
                 <img className='imgPopcorn' src={popcorn} />
             </section>
