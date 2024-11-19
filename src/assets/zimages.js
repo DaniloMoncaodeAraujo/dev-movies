@@ -11,8 +11,12 @@ import popularSeriesImg from './popularSeries.png'
 import peopleImg from './people.png'
 import logoFlix from './logoFlix.png'
 import similarMoviesSeries from './similarMoviesSeries.png'
+import github from './github.png'
+import linkedin from './linkedin.png'
+import gmail from './gmail.png'
 
 export {
     clock, filter, lupa, persona, sino, wifi, popcorn, topSeriesImg,
-    topFilmesImg, popularSeriesImg, peopleImg, logoFlix, similarMoviesSeries
+    topFilmesImg, popularSeriesImg, peopleImg, logoFlix, similarMoviesSeries,
+    github, linkedin, gmail
 }; 

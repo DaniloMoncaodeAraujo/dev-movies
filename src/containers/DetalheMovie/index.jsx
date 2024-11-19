@@ -34,7 +34,8 @@ function Detail() {
                 .catch() //error => console.log(error)
         }
 
-        getAllData()
+        getAllData();
+    window.scrollTo(0, 100);
 
     }, [id])
 

@@ -198,6 +198,22 @@ align-items: center;
     font-size: 50px;
     text-align: center;
     color: yellow;
+
+    @media ${breakpoints.xlj} {
+      font-size: 40px;
+    }
+
+    @media ${breakpoints.xlj} {
+      font-size: 30px;
+    }
+
+    @media ${breakpoints.sml} {
+      font-size: 25px;
+    }
+
+    @media ${breakpoints.sk} {
+      font-size: 20px;
+    }
  }
 `
 

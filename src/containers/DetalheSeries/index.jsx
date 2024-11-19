@@ -53,9 +53,9 @@ function DetailSeries() {
                             <h2>{series.name} </h2>
                             <SpanGenres genres={series.genres} />
                             <p className="paragrafoOverView" >{series.overview} </p>
-                            <div>
+                             <div>
                                 <Credits credits={seriesCredits} />
-                            </div>
+                            </div> 
 
                         </Info>
                     </Container>

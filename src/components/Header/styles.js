@@ -11,6 +11,15 @@ flex-direction: column;
 background-color: ${(props) => props.changeBackground ? '#000' : 'transparent'};
 border: ${(props) => props.changeBackground ? '1 px solid #fff' : ''};
 height: 130px;
+border-bottom: ${(props) => props.changeBackground ? '1px solid #2a2a2a' : 'none'};
+
+@media ${breakpoints.md} {
+  height: 112px;
+}
+
+@media ${breakpoints.sl} {
+  height: 95px;
+}
 
 `
 
