@@ -16,3 +16,4 @@ O DanFlix é uma plataforma de streaming de filmes e séries, criada com React. 
     📱 Responsividade: Adaptação perfeita para diferentes dispositivos.
     🎥 Carregamento Rápido: Navegação eficiente com informações detalhadas de filmes e séries.
     🖥️ Integração com API: Exibição de sinopses, trailers e avaliações dinâmicas.
+![Captura de tela 2024-11-20 002058](https://github.com/user-attachments/assets/85c5568e-7039-4fc0-9a86-2ace9509b495)
