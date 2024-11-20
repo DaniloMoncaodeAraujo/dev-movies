@@ -1,8 +1,18 @@
-# React + Vite
+DanFlix 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O DanFlix é uma plataforma de streaming de filmes e séries, criada com React. A proposta desse projeto foi proporcionar uma experiência de navegação fluída e moderna, onde os usuários podem explorar filmes e séries com facilidade, aproveitando os dados dinâmicos da API para exibir informações detalhadas.
 
-Currently, two official plugins are available:
+🔧 Tecnologias Utilizadas:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    🌐 HTML5
+    🎨 CSS3
+    📜 JavaScript
+    🛠️ React
+    🔗 API de Filmes (The Movie Database)
+
+🌟 Destaques:
+ 
+    📽️ Design Clean e Intuitivo: Interface minimalista que facilita a navegação.
+    📱 Responsividade: Adaptação perfeita para diferentes dispositivos.
+    🎥 Carregamento Rápido: Navegação eficiente com informações detalhadas de filmes e séries.
+    🖥️ Integração com API: Exibição de sinopses, trailers e avaliações dinâmicas.
