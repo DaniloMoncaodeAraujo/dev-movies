@@ -16,6 +16,7 @@ const subirDescer = keyframes`
 export const Container = styled.div`
 background: #000;
 padding: 0 20px;
+overflow: hidden;
 
 section{
     display: flex;
@@ -68,6 +69,7 @@ section{
 }
 .swiper-wrapper{
     display: flex;
+    
 }
 
 `

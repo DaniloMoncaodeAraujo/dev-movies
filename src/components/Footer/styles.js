@@ -10,8 +10,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0 30px;
-position: relative;
-bottom: 0px;
+
 
 @media ${breakpoints.sm} {
     padding: 0 30px 0 8px;

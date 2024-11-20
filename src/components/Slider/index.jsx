@@ -17,7 +17,7 @@ function Slider({ info, title, img, detail  }) {
                 slidesPerView={'auto'}
                 className='swiper'>
                 {info.map((item, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide className="swiperslide" key={index}>
                         <Card item={item} title={title} detail={detail} />
                     </SwiperSlide>
                 ))}

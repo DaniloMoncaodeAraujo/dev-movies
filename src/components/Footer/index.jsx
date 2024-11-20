@@ -10,9 +10,9 @@ function Footer() {
             
 
             <article>
-                <a href=""> <img src={linkedin} /> </a>
-                <a href=""> <img src={github} /> </a>
-                <a href=""> <img src={gmail} /> </a>
+                <a href="https://www.linkedin.com/in/danilo-mon%C3%A7%C3%A3o-de-araujo/"> <img src={linkedin} /> </a>
+                <a href="https://github.com/DaniloMoncaodeAraujo"> <img src={github} /> </a>
+                <a href="mailto:danilomoncaoaraujo@gmail.com"> <img src={gmail} /> </a>
             </article>
         </ContainerMain>
     )
